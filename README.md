@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Weather Application
+Weather Application is a Reactjs based project which helps you to show the weather forcast of the area you specified with the best results.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Introduction
+This is a Reactjs project which first needs access to your location. Once you grant access then it shows weather details of your cuurent location.
+You can also search any city's weather forecast. It also provides you the feature with hourwise analysis of the weather.
 
-## Available Scripts
+![image](https://github.com/Harshgoel22/WeatherForecast/assets/97740299/f27df359-71a4-4bcc-9d2f-db95d78d633b)
+![image](https://github.com/Harshgoel22/WeatherForecast/assets/97740299/72dc4268-31f8-40a3-a6c9-874656f1bf7b)
+![image](https://github.com/Harshgoel22/WeatherForecast/assets/97740299/57ad1bf1-1b3e-4b57-abb9-e0045e66105e)
+![image](https://github.com/Harshgoel22/WeatherForecast/assets/97740299/f4a290dc-f5da-4f84-9e78-53e36af722b2)
 
-In the project directory, you can run:
+# Key Features
+1.  It allows you to provide weather details with the best precision.
+2.  Can search any city's weather forecast by simply searching it.
+3.  Have the provision to view weather details on hourwise basis in tabular format and in graphical method.
+4.  Very simple UI or easy to use
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Technologies used
+This project was developed using the following technologies:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.  Reactjs
+2.  CSS, Bootstrap and fontawesome icons (used to build wonderfull UI)
+3.  axios (for fetching data via apis)
+4.  plotly.js (for showing hourwise analysis via graph)
