@@ -1,0 +1,43 @@
+.CardCollection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.cardBody{
+    background: linear-gradient(60deg, rgba(25,144,163,1) 10%, rgba(48,115,156,1) 50%, rgba(49,102,161,1) 100%);
+    margin: 5px;
+    min-width: 118px;
+    min-height: 120px;
+    border-radius: 5px;
+    box-shadow: 2px 3px #c2c4c4;
+    color: #fff;
+    padding: 2px;
+}
+.cardImg{
+    min-height: 20px;
+    padding-left: 16px;
+    margin: 0;
+}
+.cardText{
+    padding: 1px;
+}
+.cardTemp{
+    padding: 2px;
+}
+.CardCollection::-webkit-scrollbar {
+    display: none;
+}
+.graphplot{
+    padding: 20px 3px 0 3px;
+    overflow-x: scroll; 
+}
+.graphplot::-webkit-scrollbar {
+    display: none;
+}
