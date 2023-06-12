@@ -27,9 +27,9 @@ function Home(){
     //for hourwise data
     const [hrData, setHrData] = useState([]);
 
-    const getHourData = async () => {
+    const getHourData = async (str="") => {
         try{
-            let api = `https://api.weatherapi.com/v1/forecast.json?key=4ac55578272a40fe963132616230904&q=${cityName}&days=1&aqi=no&alerts=no`;
+            let api = `https://api.weatherapi.com/v1/forecast.json?key=4ac55578272a40fe963132616230904&q=${(str!=="")?str:cityName}&days=1&aqi=no&alerts=no`;
             const data = await(await fetch(api)).json();
             console.log(data);
             const list = data.forecast.forecastday[0].hour;
@@ -78,13 +78,13 @@ function Home(){
           setStatus('Geolocation is not supported by your browser');
         } else {
           setStatus('Locating...');
-          navigator.geolocation.getCurrentPosition((position) => {
+          navigator.geolocation.getCurrentPosition(async (position) => {
             setStatus(null);
             const {latitude,longitude} = position.coords;
             const str = latitude+","+longitude;
             setCityName(str);
-            getData(str);
-            getHourData();
+            await getData(str);
+            await getHourData(str);
           }, () => {
             setStatus('Unable to retrieve your location');
           });
@@ -97,7 +97,7 @@ function Home(){
                 <SlidingWindow setState={setState} isPaneOpenLeft={isPaneOpenLeft}/>
                 <Navbarr getHourData={getHourData} setState={setState} valid={valid} setValid={setValid}/>
                 <SearchBar setnm={setnm} nm={nm} setCityName={setCityName} 
-                    getData={getData}/>
+                    getData={getData} getHourData={getHourData} />
                 {status && <button className="getLocationbtn" onClick={getLocation}>Grant Location Permission</button>}
                 {!status && loader && <div className="custom-loader"></div>}
                 {!status && !loader && <UpperDiv city={city} country={country} temp={temp} icon={icon} 

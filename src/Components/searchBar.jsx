@@ -14,6 +14,7 @@ function SearchBar(props){
                     event.preventDefault();
                     props.setCityName(props.nm);
                     props.getData(props.nm);
+                    props.getHourData();
                     props.setnm("");
                 }} type="submit"><FontAwesomeIcon icon={faMagnifyingGlass} shake /></button>
             </form>
